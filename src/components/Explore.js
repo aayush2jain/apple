@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import exploreVideo from '../assets/videos/explore.mp4'
 import { explore1Img, explore2Img } from '../utils'
-import VideoCarousel from './VideoCarousel'
+
 gsap.registerPlugin(ScrollTrigger) 
 gsap.registerPlugin(useGSAP)
 const Explore = () => {
