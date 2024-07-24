@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react'
-import gsap from 'gsap'
+import {gsap} from 'gsap'
 import { useGSAP } from '@gsap/react'
-import ScrollTrigger from 'gsap/ScrollTrigger'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import exploreVideo from '../assets/videos/explore.mp4'
 import { explore1Img, explore2Img } from '../utils'
 import VideoCarousel from './VideoCarousel'
@@ -12,7 +12,7 @@ const exploreRef=useRef();
 useGSAP(()=>{
   const video = document.getElementById('exploreVideo');
     gsap.to(video, {
-      scrollTrigger: {
+      ScrollTrigger: {
         trigger: '#exploreVideo',
         toggleActions: 'play pause reverse restart',
         onEnter: () => video.play(),
@@ -47,7 +47,7 @@ useGSAP(()=>{
     useEffect(()=>{
        const el=scrollRef.current;
       gsap.to("#ex", {
-    scrollTrigger:{
+    ScrollTrigger:{
     trigger:el,
     scrub:2
     },// start animation when ".box" enters the viewport
