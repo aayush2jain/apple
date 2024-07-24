@@ -13,7 +13,7 @@ const exploreRef=useRef();
 useGSAP(()=>{
   const video = document.getElementById('exploreVideo');
     gsap.to(video, {
-      ScrollTrigger: {
+      scrollTrigger: {
         trigger: '#exploreVideo',
         toggleActions: 'play pause reverse restart',
         onEnter: () => video.play(),
@@ -26,7 +26,7 @@ useGSAP(()=>{
       paddingRight:0,
       paddingLeft:0,
       duration:3,
-      ScrollTrigger:{
+      scrollTrigger:{
         trigger:'#img1',
         start:'top 90%',
         end:"top 10%",
@@ -38,7 +38,7 @@ useGSAP(()=>{
       y:-20,
       duration:2,
       delay:1,
-      ScrollTrigger:{
+      scrollTrigger:{
         trigger:'#exploreh1',
         scrub:2
       }
@@ -48,7 +48,7 @@ useGSAP(()=>{
     useEffect(()=>{
        const el=scrollRef.current;
       gsap.to("#ex", {
-    ScrollTrigger:{
+    scrollTrigger:{
     trigger:el,
     scrub:2
     },// start animation when ".box" enters the viewport
