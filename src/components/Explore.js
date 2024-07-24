@@ -6,6 +6,7 @@ import exploreVideo from '../assets/videos/explore.mp4'
 import { explore1Img, explore2Img } from '../utils'
 import VideoCarousel from './VideoCarousel'
 gsap.registerPlugin(ScrollTrigger) 
+gsap.registerPlugin(useGSAP)
 const Explore = () => {
   const scrollRef=useRef();
 const exploreRef=useRef();
@@ -25,7 +26,7 @@ useGSAP(()=>{
       paddingRight:0,
       paddingLeft:0,
       duration:3,
-      scrollTrigger:{
+      ScrollTrigger:{
         trigger:'#img1',
         start:'top 90%',
         end:"top 10%",
@@ -37,7 +38,7 @@ useGSAP(()=>{
       y:-20,
       duration:2,
       delay:1,
-      scrollTrigger:{
+      ScrollTrigger:{
         trigger:'#exploreh1',
         scrub:2
       }

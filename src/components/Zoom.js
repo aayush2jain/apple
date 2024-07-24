@@ -2,6 +2,7 @@ import React from 'react'
 import { zoomvideo } from '../utils'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+gsap.registerPlugin(useGSAP)
 const Zoom = () => {
   useGSAP(()=>{
     gsap.to('#zoom1',{
