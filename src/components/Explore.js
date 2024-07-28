@@ -1,20 +1,21 @@
 import React, { useEffect, useRef } from 'react'
 import {gsap} from 'gsap'
 import { useGSAP } from '@gsap/react'
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import exploreVideo from '../assets/videos/explore.mp4'
 import { explore1Img, explore2Img } from '../utils'
 
-gsap.registerPlugin(ScrollTrigger) 
-gsap.registerPlugin(useGSAP)
+
 const Explore = () => {
+  gsap.registerPlugin(ScrollTrigger) 
+gsap.registerPlugin(useGSAP)
   const scrollRef=useRef();
 const exploreRef=useRef();
 useGSAP(()=>{
   const video = document.getElementById('exploreVideo');
     gsap.to(video, {
       scrollTrigger: {
-        trigger: '#exploreVideo',
+        trigger: video,
         toggleActions: 'play pause reverse restart',
         onEnter: () => video.play(),
         onEnterBack: () => video.play(),

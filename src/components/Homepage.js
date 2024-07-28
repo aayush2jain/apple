@@ -29,12 +29,7 @@ const Homepage = () => {
       delay:1.5,
       translateY:-20
     })
-      gsap.to('#h3',{
-      opacity:1,
-      delay:1.5,
-      y:0,
-      stagger:1
-    })
+     
   },[])
   return (
 
