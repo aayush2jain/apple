@@ -34,7 +34,7 @@ const Explore = () => {
       scrollTrigger: {
         trigger: '#img1',
         scrub: 2,
-        markers: true,
+        markers: false,
       },
     });
 
@@ -80,7 +80,7 @@ const Explore = () => {
           <div className='flex flex-row px-[10vw] gap-[2vw] mb-[20vh] mt-[5vh]'>
             <div className='flex flex-col'>
               <div className='h-[82vh] w-[38vw] bg-black relative'>
-                <Image src={explore1} className='pr-[4vw] opacity-0 absolute' id='img1'  alt='' />
+                <Image src={explore1} className='pr-[4vw] opacity-0 absolute' height={1000} width={1000} id='img1'  alt='' />
               </div>
               <div className='pt-[20vh] font-semibold text-white text-xl ml-[6vw] mr-[10vw] opacity-0' id="exploreh1">
                 <p>
@@ -90,7 +90,7 @@ const Explore = () => {
             </div>
             <div className='flex flex-col'>
               <div className='h-[88vh] w-[40vw] bg-black content-center'>
-                <Image src={explore2Img} className='opacity-0 px-[2vw]' id="img2" alt='' />
+                <Image src={explore2Img} className='opacity-0 px-[2vw]' id="img2" height={1000} width={1000} alt='' />
               </div>
               <div className='pt-[14vh] font-semibold text-white text-xl ml-[6vw] mr-[10vw] opacity-0' id="exploreh2">
                 <p>
