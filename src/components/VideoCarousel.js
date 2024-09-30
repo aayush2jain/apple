@@ -3,26 +3,26 @@ import React, { useRef, useEffect, useState } from 'react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 import { highlightsSlides } from '../constants';
 
 const VideoCarousel = () => {
     useGSAP(()=>{
-    gsap.to('#he',{
+    gsap.to('#h3',{
       opacity:1,
       delay:1.5,
-      translateX:10
+      translateX:10,
+      scrollTrigger:{
+          trigger:'#he',
+          scrub:2,
+        },
     })
-    gsap.to('#h2,#h3',{
+    gsap.to('#h2,#h1',{
       opacity:1,
       delay:1.5,
       translateY:-20
     })
-      gsap.to('#h3',{
-      opacity:1,
-      delay:1.5,
-      y:0,
-      stagger:1
-    })
+   
   },[])
   const videoRefs = useRef([]);
   const [current, setCurrent] = useState(1);
@@ -44,22 +44,22 @@ const VideoCarousel = () => {
   return (
     <>
      <div className='highligt '>
-   <div className='h-[40vh] w-full bg-zinc-900  flex flex-row py-[25vh]  gap-[20vw] '>
-   <h1 className=' text-6xl pl-[5vw] text-gray-400 font-medium opacity-0' id='h3'>Get The Highlights.</h1>
+   <div className='h-[40vh] w-full bg-zinc-900  flex flex-row md:py-[25vh] py-[15vh]  gap-[20vw] '>
+   <h1 className=' md:text-6xl text-5xl pl-[5vw] text-gray-400 font-medium opacity-0' id='h3'>Get The Highlights.</h1>
    <div className='text-blue-400 flex flex-row text-3xl gap-[3vw] pt-[3vh]'>
-    <div className="flex flex-row gap-2 opacity-0" id="h3">
-<h1>Watch the film</h1>
-<i className="fa-solid fa-play text-lg pt-1"></i>
+    <div className="md:flex flex-row gap-2 opacity-0 hidden" id="h1">
+    <h1>Watch the film</h1>
+    <i className="fa-solid fa-play text-lg pt-1"></i>
     </div>
-    <div className='flex flex-row gap-2 opacity-0' id='h3'>
+    <div className='md:flex hidden flex-row gap-2 opacity-0' id='h2'>
   <h1>Watch the event</h1>
   <i className="fa-solid fa-chevron-right text-lg pt-1 "></i>
   </div>
    </div>
     </div>
 </div>
-    <div className='carousel  flex bg-zinc-900 h-[100vh] relative'>
-      <div className='carousel_wrapper relative h-[100vh] w-[90vw] mx-[5vw] bg-zinc-900'>
+    <div className='carousel  flex bg-zinc-900 h-[150vh] relative'>
+      <div className='carousel_wrapper relative h-[150vh] w-[90vw] mx-[5vw] bg-zinc-900'>
         {highlightsSlides.map((list, index) => (
           <div
             key={list.id}

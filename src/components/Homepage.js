@@ -48,21 +48,22 @@ const Homepage = () => {
     <p className='hover:text-white hover:cursor-pointer'>Ipad</p>
     <p className='hover:text-white hover:cursor-pointer'>Watch
     </p>
-    <p className='hover:text-white hover:cursor-pointer'>Airpods</p>
-    <p className='hover:text-white hover:cursor-pointer'>TV & Home</p>
-    <p className='hover:text-white hover:cursor-pointer'>Vision</p>
-    <p className='hover:text-white hover:cursor-pointer'>Entertaintment</p>
-    <p className='hover:text-white hover:cursor-pointer'>Acessories</p>
-    <p className='hover:text-white hover:cursor-pointer'>Support</p>
+    
+    <p className='hover:text-white hidden sm:inline hover:cursor-pointer'>Airpods</p>
+    <p className='hover:text-white hidden sm:inline hover:cursor-pointer'>TV & Home</p>
+    <p className='hover:text-white hidden sm:inline hover:cursor-pointer'>Vision</p>
+    <p className='hover:text-white hidden sm:inline hover:cursor-pointer'>Entertaintment</p>
+    <p className='hover:text-white hidden sm:inline hover:cursor-pointer'>Acessories</p>
+    <p className='hover:text-white hidden sm:inlinehover:cursor-pointer'>Support</p>
     <i className="fa-solid fa-magnifying-glass text-xl hover:cursor-pointer"></i>
     <i className="fa-solid fa-bag-shopping text-xl hover:cursor-pointer"></i>
     </div>
     <div id="landing page" className='h-[90vh] bg-black w-full'>
-    <h1 className='text-gray-400 pt-[10vh] px-[42vw] text-3xl absolute opacity-0' id='he'>iPhone 15 Pro</h1>
+    <h1 className='text-gray-400 pt-[10vh] lg:pl-[42vw] md:pl-[35vw] sm:pl-[30vw] pl-[20vw] text-3xl absolute opacity-0' id='he'>iPhone 15 Pro</h1>
     <video className=' h-[80vh] m-0 p-0' autoPlay muted id="video" src={heroVideo}></video>
      <div id="h2"className='absolute bottom-10 text-white opacity-0'>
-      <button className='bg-blue-600 rounded-full w-[6vw] z-20 mx-[47vw] h-[8vh] text-white font-medium text-xl my-0 py-0'>Buy</button>
-      <p className='mx-[27vw] mt-[5vh] text-2xl font-semibold' id="h3">From $999 or $41.62/mo. for 24 mo.1
+      <button className='bg-blue-600 rounded-3xl md:rounded-full w-[20vw] md:w-[6vw] z-20 mx-[37vw] md:mx-[47vw] h-[8vh] text-white font-medium text-xl my-0 py-0'>Buy</button>
+      <p className='md:mx-[27vw] mx-[5vw] mt-[5vh] text-2xl font-semibold' id="h3">From $999 or $41.62/mo. for 24 mo.1
 
 Get the highlights.
 </p>
