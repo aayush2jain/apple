@@ -61,13 +61,16 @@ const Homepage = () => {
     <div id="landing page" className='h-[90vh] bg-black w-full'>
     <h1 className='text-gray-400 pt-[10vh] lg:pl-[42vw] md:pl-[35vw] sm:pl-[30vw] pl-[20vw] text-3xl absolute opacity-0' id='he'>iPhone 15 Pro</h1>
     <video className=' h-[80vh] m-0 p-0' autoPlay muted id="video" src={heroVideo}></video>
-     <div id="h2"className='absolute bottom-10 text-white opacity-0'>
-      <button className='bg-blue-600 rounded-3xl md:rounded-full w-[20vw] md:w-[6vw] z-20 mx-[37vw] md:mx-[47vw] h-[8vh] text-white font-medium text-xl my-0 py-0'>Buy</button>
-      <p className='md:mx-[27vw] mx-[5vw] mt-[5vh] text-2xl font-semibold' id="h3">From $999 or $41.62/mo. for 24 mo.1
-
-Get the highlights.
-</p>
-    </div>
+     <div id="h2" className="absolute bottom-10 text-white opacity-0 flex flex-col items-center w-full">
+  <button className="bg-blue-600 rounded-3xl md:rounded-full w-[50vw] sm:w-[30vw] md:w-[15vw] lg:w-[10vw] z-20 h-[8vh] text-white font-medium text-xl">
+    Buy
+  </button>
+  <p className="text-center mt-5 text-lg sm:text-xl md:text-2xl font-semibold max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
+    From $999 or $41.62/month for 24 months.
+    <br />
+    Get the highlights.
+  </p>
+</div>
     </div>
       </>
  
